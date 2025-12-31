@@ -327,14 +327,14 @@ export default function PayTransferComponent() {
           
           <div className="ml-11 mb-6">
               <p className="text-gray-700 mb-4">
-              {details.message}
+              {details?.message}
               </p>
               <p className="text-gray-700 mb-2">
               Please contact us to resolve this issue:
               </p>
               <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
               {/* <p className="text-sm text-gray-600 mb-1">Your claims representative</p> */}
-              <p className="text-xl font-semibold text-blue-700">{formatPhoneNumber(details.contact)}</p>
+              <p className="text-xl font-semibold text-blue-700">{formatPhoneNumber(details?.contact || '')}</p>
               </div>
           </div>
           
